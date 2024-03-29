@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+		<title>MotokaUg - Admin Dashboard HTML</title>
 
 		<!-- Site favicon -->
 		<link
@@ -45,7 +45,12 @@
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/plugins/fullcalendar/fullcalendar.css"
+			href="src/plugins/datatables/css/dataTables.bootstrap4.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/plugins/datatables/css/responsive.bootstrap4.min.css"
 		/>
 		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
@@ -86,9 +91,9 @@
 	<body>
 		<div class="pre-loader">
 			<div class="pre-loader-box">
-				<div class="loader-logo">
+				<!-- <div class="loader-logo">
 					<img src="vendors/images/deskapp-logo.svg" alt="" />
-				</div>
+				</div> -->
 				<div class="loader-progress" id="progress_div">
 					<div class="bar" id="bar1"></div>
 				</div>
@@ -192,7 +197,7 @@
 									<li>
 										<a href="#">
 											<img src="vendors/images/img.jpg" alt="" />
-											<h3>John Doe</h3>
+											<h3>Nickson</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit, sed...
@@ -202,53 +207,14 @@
 									<li>
 										<a href="#">
 											<img src="vendors/images/photo1.jpg" alt="" />
-											<h3>Lea R. Frith</h3>
+											<h3>Phillip</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit, sed...
 											</p>
 										</a>
 									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
-											<h3>Erik L. Richards</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
-											<h3>John Doe</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
-											<h3>Renee I. Hansen</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
-											<h3>Vicki M. Coleman</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
+								
 								</ul>
 							</div>
 						</div>
@@ -265,7 +231,7 @@
 							<span class="user-icon">
 								<img src="vendors/images/photo1.jpg" alt="" />
 							</span>
-							<span class="user-name">Ross C. Lopez</span>
+							<span class="user-name">Calvin</span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -285,11 +251,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="github-link">
-					<a href="https://github.com/dropways/deskapp" target="_blank"
-						><img src="vendors/images/github.svg" alt=""
-					/></a>
-				</div>
+				
 			</div>
 		</div>
 
@@ -466,12 +428,8 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
-					<img
-						src="vendors/images/deskapp-logo-white.svg"
-						alt=""
-						class="light-logo"
-					/>
+					
+					<h2>MotokaUg</h2>
 				</a>
 				<div class="close-sidebar" data-toggle="left-sidebar-close">
 					<i class="ion-close-round"></i>
@@ -481,9 +439,9 @@
 				<div class="sidebar-menu">
 					<ul id="accordion-menu">
 						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
+							<a href="index.html" class="dropdown-toggle">
 								<span class="micon bi bi-house"></span
-								><span href="index3.html">Home</span>
+								><span href="index.html">Home</span>
 							</a>
 							
 						</li>
@@ -500,16 +458,7 @@
 								
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-table"></span
-								><span class="mtext">Tables</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="basic-table.html">Basic Tables</a></li>
-								<li><a href="datatable.html">DataTables</a></li>
-							</ul>
-						</li>
+						
 						<li>
 							<a href="calendar.html" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-calendar4-week"></span
@@ -525,7 +474,7 @@
 								><span class="mtext">Charts</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="highchart.html">Highchart</a></li>
+								<li><a href="highchart.html">Sales Chart</a></li>
 								
 							</ul>
 						</li>
@@ -537,11 +486,9 @@
 								><span class="mtext">Extra Pages</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="contact-directory.html">Contact Directory</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="blog-detail.html">Blog Detail</a></li>
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="profile.html">Profile</a></li>
+								<li><a href="contact-directory.html">Employee Profile</a></li>
+								
+								<li><a href="profile.html"> Company Profile</a></li>
 								
 							</ul>
 						</li>
@@ -561,11 +508,11 @@
 						<li>
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-file-pdf"></span
-								><span class="mtext">Documentation</span>
+								><span class="mtext">Sales</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="introduction.html">Introduction</a></li>
-								<li><a href="getting-started.html">Getting Started</a></li>
+								<li><a href="introduction.html">Shipments</a></li>
+								<li><a href="getting-started.html">Pending Sales</a></li>
 								
 							</ul>
 						</li>
@@ -574,6 +521,8 @@
 				</div>
 			</div>
 		</div>
+		
+		
 		<div class="mobile-menu-overlay"></div>
 
 		<div class="main-container">
