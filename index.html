@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+		<title>MotokaUg - Admin Dashboard HTML</title>
 
 		<!-- Site favicon -->
 		<link
@@ -41,6 +41,16 @@
 			rel="stylesheet"
 			type="text/css"
 			href="vendors/styles/icon-font.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/plugins/datatables/css/dataTables.bootstrap4.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/plugins/datatables/css/responsive.bootstrap4.min.css"
 		/>
 		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
@@ -81,9 +91,9 @@
 	<body>
 		<div class="pre-loader">
 			<div class="pre-loader-box">
-				<div class="loader-logo">
+				<!-- <div class="loader-logo">
 					<img src="vendors/images/deskapp-logo.svg" alt="" />
-				</div>
+				</div> -->
 				<div class="loader-progress" id="progress_div">
 					<div class="bar" id="bar1"></div>
 				</div>
@@ -187,7 +197,7 @@
 									<li>
 										<a href="#">
 											<img src="vendors/images/img.jpg" alt="" />
-											<h3>John Doe</h3>
+											<h3>Nickson</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit, sed...
@@ -197,53 +207,14 @@
 									<li>
 										<a href="#">
 											<img src="vendors/images/photo1.jpg" alt="" />
-											<h3>Lea R. Frith</h3>
+											<h3>Phillip</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit, sed...
 											</p>
 										</a>
 									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
-											<h3>Erik L. Richards</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
-											<h3>John Doe</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
-											<h3>Renee I. Hansen</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
-											<h3>Vicki M. Coleman</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
+								
 								</ul>
 							</div>
 						</div>
@@ -260,7 +231,7 @@
 							<span class="user-icon">
 								<img src="vendors/images/photo1.jpg" alt="" />
 							</span>
-							<span class="user-name">Ross C. Lopez</span>
+							<span class="user-name">Calvin</span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -280,11 +251,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="github-link">
-					<a href="https://github.com/dropways/deskapp" target="_blank"
-						><img src="vendors/images/github.svg" alt=""
-					/></a>
-				</div>
+				
 			</div>
 		</div>
 
@@ -461,12 +428,8 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
-					<img
-						src="vendors/images/deskapp-logo-white.svg"
-						alt=""
-						class="light-logo"
-					/>
+					
+					<h2>MotokaUg</h2>
 				</a>
 				<div class="close-sidebar" data-toggle="left-sidebar-close">
 					<i class="ion-close-round"></i>
@@ -476,9 +439,9 @@
 				<div class="sidebar-menu">
 					<ul id="accordion-menu">
 						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
+							<a href="index.html" class="dropdown-toggle">
 								<span class="micon bi bi-house"></span
-								><span href="index3.html">Home</span>
+								><span href="index.html">Home</span>
 							</a>
 							
 						</li>
@@ -495,16 +458,7 @@
 								
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-table"></span
-								><span class="mtext">Tables</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="basic-table.html">Basic Tables</a></li>
-								<li><a href="datatable.html">DataTables</a></li>
-							</ul>
-						</li>
+						
 						<li>
 							<a href="calendar.html" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-calendar4-week"></span
@@ -520,7 +474,7 @@
 								><span class="mtext">Charts</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="highchart.html">Highchart</a></li>
+								<li><a href="highchart.html">Sales Chart</a></li>
 								
 							</ul>
 						</li>
@@ -532,11 +486,9 @@
 								><span class="mtext">Extra Pages</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="contact-directory.html">Contact Directory</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="blog-detail.html">Blog Detail</a></li>
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="profile.html">Profile</a></li>
+								<li><a href="contact-directory.html">Employee Profile</a></li>
+								
+								<li><a href="profile.html"> Company Profile</a></li>
 								
 							</ul>
 						</li>
@@ -556,11 +508,11 @@
 						<li>
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-file-pdf"></span
-								><span class="mtext">Documentation</span>
+								><span class="mtext">Sales</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="introduction.html">Introduction</a></li>
-								<li><a href="getting-started.html">Getting Started</a></li>
+								<li><a href="introduction.html">Shipments</a></li>
+								<li><a href="getting-started.html">Pending Sales</a></li>
 								
 							</ul>
 						</li>
@@ -569,312 +521,347 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="mobile-menu-overlay"></div>
 
 		<div class="main-container">
-			<div class="pd-ltr-20 xs-pd-20-10">
-				<div class="min-height-200px">
-					<div class="page-header">
-						<div class="row">
-							<div class="col-md-6 col-sm-12">
-								<div class="title">
-									<h4>Charts</h4>
+			<div class="pd-ltr-20">
+				<div class="card-box pd-20 height-100-p mb-30">
+					<div class="row align-items-center">
+						<div class="col-md-4">
+							<img src="vendors/images/banner-img.png" alt="" />
+						</div>
+						<div class="col-md-8">
+							<h4 class="font-20 weight-500 mb-10 text-capitalize">
+								Welcome back
+								<div class="weight-600 font-30 text-blue">Phillip!</div>
+							</h4>
+							<p class="font-18 max-width-600">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+								hic non repellendus debitis iure, doloremque assumenda.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-3 mb-30">
+						<div class="card-box height-100-p widget-style1">
+							<div class="d-flex flex-wrap align-items-center">
+								<div class="progress-data">
+									<div id="chart"></div>
 								</div>
-								<nav aria-label="breadcrumb" role="navigation">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item">
-											<a href="index.html">Home</a>
-										</li>
-										<li class="breadcrumb-item active" aria-current="page">
-											Charts
-										</li>
-									</ol>
-								</nav>
+								<div class="widget-data">
+									<div class="h4 mb-0">2024</div>
+									<div class="weight-600 font-14">Contact</div>
+								</div>
 							</div>
-							<div class="col-md-6 col-sm-12 text-right">
-								<div class="dropdown">
-									<a
-										class="btn btn-primary dropdown-toggle"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										January 2020
-									</a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Export List</a>
-										<a class="dropdown-item" href="#">Policies</a>
-										<a class="dropdown-item" href="#">View Assets</a>
+						</div>
+					</div>
+					<div class="col-xl-3 mb-30">
+						<div class="card-box height-100-p widget-style1">
+							<div class="d-flex flex-wrap align-items-center">
+								<div class="progress-data">
+									<div id="chart2"></div>
+								</div>
+								<div class="widget-data">
+									<div class="h4 mb-0">400</div>
+									<div class="weight-600 font-14">Deals</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 mb-30">
+						<div class="card-box height-100-p widget-style1">
+							<div class="d-flex flex-wrap align-items-center">
+								<div class="progress-data">
+									<div id="chart3"></div>
+								</div>
+								<div class="widget-data">
+									<div class="h4 mb-0">350</div>
+									<div class="weight-600 font-14">Campaign</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 mb-30">
+						<div class="card-box height-100-p widget-style1">
+							<div class="d-flex flex-wrap align-items-center">
+								<div class="progress-data">
+									<div id="chart4"></div>
+								</div>
+								<div class="widget-data">
+									<div class="h4 mb-0">$6060</div>
+									<div class="weight-600 font-14">Worth</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-8 mb-30">
+						<div class="card-box height-100-p pd-20">
+							<h2 class="h4 mb-20">Activity</h2>
+							<div id="chart5"></div>
+						</div>
+					</div>
+					<div class="col-xl-4 mb-30">
+						<div class="card-box height-100-p pd-20">
+							<h2 class="h4 mb-20">Lead Target</h2>
+							<div id="chart6"></div>
+						</div>
+					</div>
+				</div>
+				<div class="card-box mb-30">
+					<h2 class="h4 pd-20">Best Selling Products</h2>
+					<table class="data-table table nowrap">
+						<thead>
+							<tr>
+								<th class="table-plus datatable-nosort">Product</th>
+								<th>Name</th>
+								<th>Color</th>
+								<th>Size</th>
+								<th>Price</th>
+								<th>Oty</th>
+								<th class="datatable-nosort">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="table-plus">
+									<img
+										src="https://cars.usnews.com/static/images/Auto/custom/15366/2023_Mercedes-Benz_G_63_1.jpg"
+										width="70"
+										height="70"
+										alt=""
+									/>
+								</td>
+								<td>
+									<h5 class="font-16">Benz</h5>
+									by Calvin
+								</td>
+								<td>Black</td>
+								<td>M</td>
+								<td>$1000</td>
+								<td>1</td>
+								<td>
+									<div class="dropdown">
+										<a
+											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="dw dw-more"></i>
+										</a>
+										<div
+											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+										>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-eye"></i> View</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-edit2"></i> Edit</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-delete-3"></i> Delete</a
+											>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row clearfix progress-box">
-						<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-							<div class="card-box pd-30 height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial1"
-										value="80"
-										data-width="120"
-										data-height="120"
-										data-linecap="round"
-										data-thickness="0.12"
-										data-bgColor="#fff"
-										data-fgColor="#1b00ff"
-										data-angleOffset="180"
-										readonly
+								</td>
+							</tr>
+							<tr>
+								<td class="table-plus">
+									<img
+										src="https://www.motortrend.com/uploads/2023/10/2024-Toyota-RAV4-TRD-front-view-20.jpg"
+										width="70"
+										height="70"
+										alt=""
 									/>
-									<h5 class="text-blue padding-top-10 h5">My Earnings</h5>
-									<span class="d-block"
-										>80% Average <i class="fa fa-line-chart text-blue"></i
-									></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-							<div class="card-box pd-30 height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial2"
-										value="70"
-										data-width="120"
-										data-height="120"
-										data-linecap="round"
-										data-thickness="0.12"
-										data-bgColor="#fff"
-										data-fgColor="#00e091"
-										data-angleOffset="180"
-										readonly
+								</td>
+								<td>
+									<h5 class="font-16">Subaru</h5>
+									by Lydia
+								</td>
+								<td>brown</td>
+								<td>9UK</td>
+								<td>$900</td>
+								<td>1</td>
+								<td>
+									<div class="dropdown">
+										<a
+											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="dw dw-more"></i>
+										</a>
+										<div
+											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+										>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-eye"></i> View</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-edit2"></i> Edit</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-delete-3"></i> Delete</a
+											>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-plus">
+									<img
+										src="https://global.toyota/pages/news/images/2021/08/02/1330/001.jpg"
+										width="70"
+										height="70"
+										alt=""
 									/>
-									<h5 class="text-light-green padding-top-10 h5">
-										Business Captured
-									</h5>
-									<span class="d-block"
-										>75% Average
-										<i class="fa text-light-green fa-line-chart"></i
-									></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-							<div class="card-box pd-30 height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial3"
-										value="90"
-										data-width="120"
-										data-height="120"
-										data-linecap="round"
-										data-thickness="0.12"
-										data-bgColor="#fff"
-										data-fgColor="#f56767"
-										data-angleOffset="180"
-										readonly
+								</td>
+								<td>
+									<h5 class="font-16">Kia</h5>
+									by Gibs
+								</td>
+								<td>Orange</td>
+								<td>M</td>
+								<td>$100</td>
+								<td>4</td>
+								<td>
+									<div class="dropdown">
+										<a
+											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="dw dw-more"></i>
+										</a>
+										<div
+											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+										>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-eye"></i> View</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-edit2"></i> Edit</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-delete-3"></i> Delete</a
+											>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-plus">
+									<img
+										src="https://global.toyota/pages/news/images/2021/08/02/1330/001.jpg"
+										width="70"
+										height="70"
+										alt=""
 									/>
-									<h5 class="text-light-orange padding-top-10 h5">
-										Projects Speed
-									</h5>
-									<span class="d-block"
-										>90% Average
-										<i class="fa text-light-orange fa-line-chart"></i
-									></span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-12 mb-30">
-							<div class="card-box pd-30 height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial4"
-										value="65"
-										data-width="120"
-										data-height="120"
-										data-linecap="round"
-										data-thickness="0.12"
-										data-bgColor="#fff"
-										data-fgColor="#a683eb"
-										data-angleOffset="180"
-										readonly
+								</td>
+								<td>
+									<h5 class="font-16">Toyota</h5>
+									by Nick
+								</td>
+								<td>Gray</td>
+								<td>L</td>
+								<td>$1000</td>
+								<td>1</td>
+								<td>
+									<div class="dropdown">
+										<a
+											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="dw dw-more"></i>
+										</a>
+										<div
+											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+										>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-eye"></i> View</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-edit2"></i> Edit</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-delete-3"></i> Delete</a
+											>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="table-plus">
+									<img
+										src="https://assets.volkswagen.com/is/image/volkswagenag/Golf_R-Line?Zml0PWNyb3AlMkMxJndpZD04MDAmaGVpPTYwMCZmbXQ9anBlZyZxbHQ9NzkmYmZjPW9mZiYwNDY2.jpg"
+										width="70"
+										height="70"
+										alt=""
 									/>
-									<h5 class="text-light-purple padding-top-10 h5">
-										Panding Orders
-									</h5>
-									<span class="d-block"
-										>65% Average
-										<i class="fa text-light-purple fa-line-chart"></i
-									></span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-30">
-							<div class="pd-20 card-box height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial5"
-										value="35"
-										data-width="220"
-										data-height="220"
-										data-thickness="0.08"
-										data-fgColor="#a683eb"
-										data-cursor="true"
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-30">
-							<div class="pd-20 card-box height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial5"
-										value="35"
-										data-width="220"
-										data-height="220"
-										data-thickness="0.08"
-										data-fgColor="#f56767"
-										data-angleOffset="90"
-										data-linecap="round"
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-30">
-							<div class="pd-20 card-box height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial5"
-										value="35"
-										data-width="220"
-										data-height="220"
-										data-thickness="0.02"
-										data-fgColor="#f56767"
-										data-skin="tron"
-										data-angleOffset="180"
-									/>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-30">
-							<div class="pd-20 card-box height-100-p">
-								<div class="progress-box text-center">
-									<input
-										type="text"
-										class="knob dial5"
-										value="35"
-										data-width="220"
-										data-height="220"
-										data-thickness="0.08"
-										data-fgColor="#0099ff"
-										data-angleOffset="-125"
-										data-angleArc="250"
-										data-rotation="anticlockwise"
-									/>
-								</div>
-							</div>
-						</div>
-					</div>
+								</td>
+								<td>
+									<h5 class="font-16">GOLF</h5>
+									by Praise
+								</td>
+								<td>Blue</td>
+								<td>M</td>
+								<td>$1000</td>
+								<td>1</td>
+								<td>
+									<div class="dropdown">
+										<a
+											class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
+											href="#"
+											role="button"
+											data-toggle="dropdown"
+										>
+											<i class="dw dw-more"></i>
+										</a>
+										<div
+											class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
+										>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-eye"></i> View</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-edit2"></i> Edit</a
+											>
+											<a class="dropdown-item" href="#"
+												><i class="dw dw-delete-3"></i> Delete</a
+											>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="footer-wrap pd-20 mb-20 card-box">
-					DeskApp - Bootstrap 4 Admin Template By
-					<a href="https://github.com/dropways" target="_blank"
-						>Ankit Hingarajiya</a
-					>
-				</div>
+				
 			</div>
 		</div>
 		<!-- welcome modal start -->
-		<div class="welcome-modal">
-			<button class="welcome-modal-close">
-				<i class="bi bi-x-lg"></i>
-			</button>
-			<iframe
-				class="w-100 border-0"
-				src="https://embed.lottiefiles.com/animation/31548"
-			></iframe>
-			<div class="text-center">
-				<h3 class="h5 weight-500 text-center mb-2">
-					Open source
-					<span role="img" aria-label="gratitude">❤️</span>
-				</h3>
-				<div class="pb-2">
-					<a
-						class="github-button"
-						href="https://github.com/dropways/deskapp"
-						data-color-scheme="no-preference: dark; light: light; dark: light;"
-						data-icon="octicon-star"
-						data-size="large"
-						data-show-count="true"
-						aria-label="Star dropways/deskapp dashboard on GitHub"
-						>Star</a
-					>
-					<a
-						class="github-button"
-						href="https://github.com/dropways/deskapp/fork"
-						data-color-scheme="no-preference: dark; light: light; dark: light;"
-						data-icon="octicon-repo-forked"
-						data-size="large"
-						data-show-count="true"
-						aria-label="Fork dropways/deskapp dashboard on GitHub"
-						>Fork</a
-					>
-				</div>
-			</div>
-			<div class="text-center mb-1">
-				<div>
-					<a
-						href="https://github.com/dropways/deskapp"
-						target="_blank"
-						class="btn btn-light btn-block btn-sm"
-					>
-						<span class="text-danger weight-600">STAR US</span>
-						<span class="weight-600">ON GITHUB</span>
-						<i class="fa fa-github"></i>
-					</a>
-				</div>
-				<script
-					async
-					defer="defer"
-					src="https://buttons.github.io/buttons.js"
-				></script>
-			</div>
-			<a
-				href="https://github.com/dropways/deskapp"
-				target="_blank"
-				class="btn btn-success btn-sm mb-0 mb-md-3 w-100"
-			>
-				DOWNLOAD
-				<i class="fa fa-download"></i>
-			</a>
-			<p class="font-14 text-center mb-1 d-none d-md-block">
-				Available in the following technologies:
-			</p>
-			<div class="d-none d-md-flex justify-content-center h1 mb-0 text-danger">
-				<i class="fa fa-html5"></i>
-			</div>
-		</div>
-		<button class="welcome-modal-btn">
-			<i class="fa fa-download"></i> Download
-		</button>
+		
+		
 		<!-- welcome modal end -->
 		<!-- js -->
 		<script src="vendors/scripts/core.js"></script>
 		<script src="vendors/scripts/script.min.js"></script>
 		<script src="vendors/scripts/process.js"></script>
 		<script src="vendors/scripts/layout-settings.js"></script>
-		<script src="src/plugins/jQuery-Knob-master/jquery.knob.min.js"></script>
-		<script src="vendors/scripts/knob-chart-setting.js"></script>
+		<script src="src/plugins/apexcharts/apexcharts.min.js"></script>
+		<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+		<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+		<script src="vendors/scripts/dashboard.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
