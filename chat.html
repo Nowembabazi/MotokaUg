@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+		<title>MotokaUg - Admin Dashboard HTML</title>
 
 		<!-- Site favicon -->
 		<link
@@ -41,6 +41,16 @@
 			rel="stylesheet"
 			type="text/css"
 			href="vendors/styles/icon-font.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/plugins/datatables/css/dataTables.bootstrap4.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/plugins/datatables/css/responsive.bootstrap4.min.css"
 		/>
 		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
@@ -81,9 +91,9 @@
 	<body>
 		<div class="pre-loader">
 			<div class="pre-loader-box">
-				<div class="loader-logo">
+				<!-- <div class="loader-logo">
 					<img src="vendors/images/deskapp-logo.svg" alt="" />
-				</div>
+				</div> -->
 				<div class="loader-progress" id="progress_div">
 					<div class="bar" id="bar1"></div>
 				</div>
@@ -187,7 +197,7 @@
 									<li>
 										<a href="#">
 											<img src="vendors/images/img.jpg" alt="" />
-											<h3>John Doe</h3>
+											<h3>Nickson</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit, sed...
@@ -197,53 +207,14 @@
 									<li>
 										<a href="#">
 											<img src="vendors/images/photo1.jpg" alt="" />
-											<h3>Lea R. Frith</h3>
+											<h3>Phillip</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
 												elit, sed...
 											</p>
 										</a>
 									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
-											<h3>Erik L. Richards</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
-											<h3>John Doe</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
-											<h3>Renee I. Hansen</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
-											<h3>Vicki M. Coleman</h3>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing
-												elit, sed...
-											</p>
-										</a>
-									</li>
+								
 								</ul>
 							</div>
 						</div>
@@ -260,7 +231,7 @@
 							<span class="user-icon">
 								<img src="vendors/images/photo1.jpg" alt="" />
 							</span>
-							<span class="user-name">Ross C. Lopez</span>
+							<span class="user-name">Calvin</span>
 						</a>
 						<div
 							class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
@@ -280,11 +251,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="github-link">
-					<a href="https://github.com/dropways/deskapp" target="_blank"
-						><img src="vendors/images/github.svg" alt=""
-					/></a>
-				</div>
+				
 			</div>
 		</div>
 
@@ -304,29 +271,31 @@
 				<div class="right-sidebar-body-content">
 					<h4 class="weight-600 font-18 pb-10">Header Background</h4>
 					<div class="sidebar-btn-group pb-30 mb-10">
-						<a
-							href="javascript:void(0);"
-							class="btn btn-outline-primary header-white active"
-							>White</a
-						>
+						
 						<a
 							href="javascript:void(0);"
 							class="btn btn-outline-primary header-dark"
 							>Dark</a
 						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary header-white active"
+							>White</a
+						>
 					</div>
 
 					<h4 class="weight-600 font-18 pb-10">Sidebar Background</h4>
 					<div class="sidebar-btn-group pb-30 mb-10">
-						<a
-							href="javascript:void(0);"
-							class="btn btn-outline-primary sidebar-light"
-							>White</a
-						>
+						
 						<a
 							href="javascript:void(0);"
 							class="btn btn-outline-primary sidebar-dark active"
 							>Dark</a
+						>
+						<a
+							href="javascript:void(0);"
+							class="btn btn-outline-primary sidebar-light"
+							>White</a
 						>
 					</div>
 
@@ -461,12 +430,8 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
-					<img
-						src="vendors/images/deskapp-logo-white.svg"
-						alt=""
-						class="light-logo"
-					/>
+					
+					<h2 style="color: rgb(25, 170, 177)" >MotokaUg</h2>
 				</a>
 				<div class="close-sidebar" data-toggle="left-sidebar-close">
 					<i class="ion-close-round"></i>
@@ -476,124 +441,71 @@
 				<div class="sidebar-menu">
 					<ul id="accordion-menu">
 						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
+							<a href="index.html" class="dropdown-toggle">
 								<span class="micon bi bi-house"></span
-								><span class="mtext">Home</span>
+								><span href="index.html">Home</span>
 							</a>
-							<ul class="submenu">
-								<li><a href="index.html">Dashboard style 1</a></li>
-								<li><a href="index2.html">Dashboard style 2</a></li>
-								<li><a href="index3.html">Dashboard style 3</a></li>
-							</ul>
+							
 						</li>
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-textarea-resize"></span
-								><span class="mtext">Forms</span>
+								><span class="mtext">Products</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="form-basic.html">Form Basic</a></li>
+								<li><a href="product.html">Cars Details</a></li>
 								<li>
-									<a href="advanced-components.html">Advanced Components</a>
+									<a href="pricing-table.html">Car Pricing</a>
 								</li>
-								<li><a href="form-wizard.html">Form Wizard</a></li>
-								<li><a href="html5-editor.html">HTML5 Editor</a></li>
-								<li><a href="form-pickers.html">Form Pickers</a></li>
-								<li><a href="image-cropper.html">Image Cropper</a></li>
-								<li><a href="image-dropzone.html">Image Dropzone</a></li>
+								<li><a href="product.html">Brands</a></li>
+								<li><a href="product.html">Units</a></li>
+								<li><a href="product.html">Add Product</a></li>
+
+								
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-table"></span
-								><span class="mtext">Tables</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="basic-table.html">Basic Tables</a></li>
-								<li><a href="datatable.html">DataTables</a></li>
-							</ul>
-						</li>
+
 						<li>
-							<a href="calendar.html" class="dropdown-toggle no-arrow">
+							<a href="expenses.html" class="dropdown-toggle no-arrow">
 								<span class="micon bi bi-calendar4-week"></span
-								><span class="mtext">Calendar</span>
+								><span class="mtext">Expenses</span>
 							</a>
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-archive"></span
-								><span class="mtext"> UI Elements </span>
+						
+						<li>
+							<a href="Orders.html" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-calendar4-week"></span
+								><span class="mtext">Orders</span>
 							</a>
-							<ul class="submenu">
-								<li><a href="ui-buttons.html">Buttons</a></li>
-								<li><a href="ui-cards.html">Cards</a></li>
-								<li><a href="ui-cards-hover.html">Cards Hover</a></li>
-								<li><a href="ui-modals.html">Modals</a></li>
-								<li><a href="ui-tabs.html">Tabs</a></li>
-								<li>
-									<a href="ui-tooltip-popover.html">Tooltip &amp; Popover</a>
-								</li>
-								<li><a href="ui-sweet-alert.html">Sweet Alert</a></li>
-								<li><a href="ui-notification.html">Notification</a></li>
-								<li><a href="ui-timeline.html">Timeline</a></li>
-								<li><a href="ui-progressbar.html">Progressbar</a></li>
-								<li><a href="ui-typography.html">Typography</a></li>
-								<li><a href="ui-list-group.html">List group</a></li>
-								<li><a href="ui-range-slider.html">Range slider</a></li>
-								<li><a href="ui-carousel.html">Carousel</a></li>
-							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-command"></span
-								><span class="mtext">Icons</span>
+
+						<li>
+							<a href="reports.html" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-receipt-cutoff"></span
+								><span class="mtext">Reports</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="bootstrap-icon.html">Bootstrap Icons</a></li>
-								<li><a href="font-awesome.html">FontAwesome Icons</a></li>
-								<li><a href="foundation.html">Foundation Icons</a></li>
-								<li><a href="ionicons.html">Ionicons Icons</a></li>
-								<li><a href="themify.html">Themify Icons</a></li>
-								<li><a href="custom-icon.html">Custom Icons</a></li>
+								<li><a href="contact-directory.html">Sales Reports</a></li>
+								
+								<li><a href="exp-reports"> Expense Reports</a></li>
+								<li><a href="top-sell.html"> Top selling Cars</a></li>
+								<li><a href="profit.html"> Profit Loss</a></li>
+                                <li><a href="supplier.html"> Supplier Reports</a></li>
+								<li><a href="customer.html"> Customer Reports</a></li>
+								<li><a href="cash.html"> Cash Reports</a></li>
 							</ul>
 						</li>
+						
+						</li>
+						
 						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
+							<a href="users.html" class="dropdown-toggle">
 								<span class="micon bi bi-pie-chart"></span
-								><span class="mtext">Charts</span>
+								><span class="mtext">Users & Roles</span>
 							</a>
-							<ul class="submenu">
-								<li><a href="highchart.html">Highchart</a></li>
-								<li><a href="knob-chart.html">jQuery Knob</a></li>
-								<li><a href="jvectormap.html">jvectormap</a></li>
-								<li><a href="apexcharts.html">Apexcharts</a></li>
-							</ul>
+							
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-file-earmark-text"></span
-								><span class="mtext">Additional Pages</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="video-player.html">Video Player</a></li>
-								<li><a href="login.html">Login</a></li>
-								<li><a href="forgot-password.html">Forgot Password</a></li>
-								<li><a href="reset-password.html">Reset Password</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-bug"></span
-								><span class="mtext">Error Pages</span>
-							</a>
-							<ul class="submenu">
-								<li><a href="400.html">400</a></li>
-								<li><a href="403.html">403</a></li>
-								<li><a href="404.html">404</a></li>
-								<li><a href="500.html">500</a></li>
-								<li><a href="503.html">503</a></li>
-							</ul>
-						</li>
+					
 
 						<li class="dropdown">
 							<a href="javascript:;" class="dropdown-toggle">
@@ -601,575 +513,67 @@
 								><span class="mtext">Extra Pages</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="blank.html">Blank</a></li>
-								<li><a href="contact-directory.html">Contact Directory</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="blog-detail.html">Blog Detail</a></li>
-								<li><a href="product.html">Product</a></li>
-								<li><a href="product-detail.html">Product Detail</a></li>
-								<li><a href="faq.html">FAQ</a></li>
-								<li><a href="profile.html">Profile</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-								<li><a href="pricing-table.html">Pricing Tables</a></li>
+								<li><a href="employee.html">Employee Profile</a></li>
+								
+								<li><a href="company.html"> Company Profile</a></li>
+								
 							</ul>
 						</li>
-						<li class="dropdown">
-							<a href="javascript:;" class="dropdown-toggle">
-								<span class="micon bi bi-hdd-stack"></span
-								><span class="mtext">Multi Level Menu</span>
+						
+						<li>
+							<a href="" class="dropdown-toggle no-arrow">
+								<span class="micon bi bi-receipt-cutoff"></span
+								><span class="mtext">POS</span>
+
 							</a>
 							<ul class="submenu">
-								<li><a href="javascript:;">Level 1</a></li>
-								<li><a href="javascript:;">Level 1</a></li>
-								<li><a href="javascript:;">Level 1</a></li>
-								<li class="dropdown">
-									<a href="javascript:;" class="dropdown-toggle">
-										<span class="micon fa fa-plug"></span
-										><span class="mtext">Level 2</span>
-									</a>
-									<ul class="submenu child">
-										<li><a href="javascript:;">Level 2</a></li>
-										<li><a href="javascript:;">Level 2</a></li>
-									</ul>
-								</li>
-								<li><a href="javascript:;">Level 1</a></li>
-								<li><a href="javascript:;">Level 1</a></li>
-								<li><a href="javascript:;">Level 1</a></li>
+								<li><a href="sales.html">Sales</a></li>
+								
+								<li><a href="returns.html"> Returns</a></li>
+								
 							</ul>
-						</li>
-						<li>
-							<a href="sitemap.html" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-diagram-3"></span
-								><span class="mtext">Sitemap</span>
-							</a>
-						</li>
-						<li>
-							<a href="chat.html" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-chat-right-dots"></span
-								><span class="mtext">Chat</span>
-							</a>
-						</li>
-						<li>
-							<a href="invoice.html" class="dropdown-toggle no-arrow">
-								<span class="micon bi bi-receipt-cutoff"></span
-								><span class="mtext">Invoice</span>
-							</a>
 						</li>
 						<li>
 							<div class="dropdown-divider"></div>
 						</li>
 						<li>
-							<div class="sidebar-small-cap">Extra</div>
+							<div class="sidebar-small-cap">Contacts</div>
 						</li>
 						<li>
 							<a href="javascript:;" class="dropdown-toggle">
 								<span class="micon bi bi-file-pdf"></span
-								><span class="mtext">Documentation</span>
+								><span class="mtext">Customer Care</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="introduction.html">Introduction</a></li>
-								<li><a href="getting-started.html">Getting Started</a></li>
-								<li><a href="color-settings.html">Color Settings</a></li>
-								<li>
-									<a href="third-party-plugins.html">Third Party Plugins</a>
-								</li>
+								<li><a href="supplier.html">Suppliers</a></li>
+								<li><a href="Management.html">Management</a></li>
+								
 							</ul>
 						</li>
-						<li>
-							<a
-								href="https://dropways.github.io/deskapp-free-single-page-website-template/"
-								target="_blank"
-								class="dropdown-toggle no-arrow"
-							>
-								<span class="micon bi bi-layout-text-window-reverse"></span>
-								<span class="mtext"
-									>Landing Page
-									<img src="vendors/images/coming-soon.png" alt="" width="25"
-								/></span>
-							</a>
-						</li>
+						
 					</ul>
 				</div>
 			</div>
 		</div>
+		
 		<div class="mobile-menu-overlay"></div>
 
-		<div class="main-container">
-			<div class="pd-ltr-20 xs-pd-20-10">
-				<div class="min-height-200px">
-					<div class="page-header">
-						<div class="row">
-							<div class="col-md-6 col-sm-12">
-								<div class="title">
-									<h4>Chat</h4>
-								</div>
-								<nav aria-label="breadcrumb" role="navigation">
-									<ol class="breadcrumb">
-										<li class="breadcrumb-item">
-											<a href="index.html">Home</a>
-										</li>
-										<li class="breadcrumb-item active" aria-current="page">
-											Chat
-										</li>
-									</ol>
-								</nav>
-							</div>
-						</div>
-					</div>
-					<div class="bg-white border-radius-4 box-shadow mb-30">
-						<div class="row no-gutters">
-							<div class="col-lg-3 col-md-4 col-sm-12">
-								<div class="chat-list bg-light-gray">
-									<div class="chat-search">
-										<span class="ti-search"></span>
-										<input type="text" placeholder="Search Contact" />
-									</div>
-									<div
-										class="notification-list chat-notification-list customscroll"
-									>
-										<ul>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-green"></i> online
-													</p>
-												</a>
-											</li>
-											<li class="active">
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-green"></i> online
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-green"></i> online
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-warning"></i> active 5
-														min
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-warning"></i> active 4
-														min
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-warning"></i> active 3
-														min
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-orange"></i>
-														offline
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-orange"></i>
-														offline
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-orange"></i>
-														offline
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-orange"></i>
-														offline
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-orange"></i>
-														offline
-													</p>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<img src="vendors/images/img.jpg" alt="" />
-													<h3 class="clearfix">John Doe</h3>
-													<p>
-														<i class="fa fa-circle text-light-orange"></i>
-														offline
-													</p>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-9 col-md-8 col-sm-12">
-								<div class="chat-detail">
-									<div class="chat-profile-header clearfix">
-										<div class="left">
-											<div class="clearfix">
-												<div class="chat-profile-photo">
-													<img src="vendors/images/profile-photo.jpg" alt="" />
-												</div>
-												<div class="chat-profile-name">
-													<h3>Rachel Curtis</h3>
-													<span>New York, USA</span>
-												</div>
-											</div>
-										</div>
-										<div class="right text-right">
-											<div class="dropdown">
-												<a
-													class="btn btn-outline-primary dropdown-toggle"
-													href="#"
-													role="button"
-													data-toggle="dropdown"
-												>
-													Setting
-												</a>
-												<div class="dropdown-menu dropdown-menu-right">
-													<a class="dropdown-item" href="#">Export Chat</a>
-													<a class="dropdown-item" href="#">Search</a>
-													<a class="dropdown-item text-light-orange" href="#"
-														>Delete Chat</a
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="chat-box">
-										<div class="chat-desc customscroll">
-											<ul>
-												<li class="clearfix admin_chat">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img2.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>Maybe you already have additional info?</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix admin_chat">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img2.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>
-															It is to early to provide some kind of estimation
-															here. We need user stories.
-														</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img1.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>
-															We are just writing up the user stories now so
-															will have requirements for you next week. We are
-															just writing up the user stories now so will have
-															requirements for you next week.
-														</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img1.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>
-															Essentially the brief is for you guys to build an
-															iOS and android app. We will do backend and web
-															app. We have a version one mockup of the UI,
-															please see it attached. As mentioned before, we
-															would simply hand you all the assets for the UI
-															and you guys code. If you have any early questions
-															please do send them on to myself. Ill be in touch
-															in coming days when we have requirements prepared.
-															Essentially the brief is for you guys to build an
-															iOS and android app. We will do backend and web
-															app. We have a version one mockup of the UI,
-															please see it attached. As mentioned before, we
-															would simply hand you all the assets for the UI
-															and you guys code. If you have any early questions
-															please do send them on to myself. Ill be in touch
-															in coming days when we have.
-														</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix admin_chat">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img2.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>Maybe you already have additional info?</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix admin_chat">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img2.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>
-															It is to early to provide some kind of estimation
-															here. We need user stories.
-														</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img1.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>
-															We are just writing up the user stories now so
-															will have requirements for you next week. We are
-															just writing up the user stories now so will have
-															requirements for you next week.
-														</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img1.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<p>
-															Essentially the brief is for you guys to build an
-															iOS and android app. We will do backend and web
-															app. We have a version one mockup of the UI,
-															please see it attached. As mentioned before, we
-															would simply hand you all the assets for the UI
-															and you guys code. If you have any early questions
-															please do send them on to myself. Ill be in touch
-															in coming days when we have requirements prepared.
-															Essentially the brief is for you guys to build an
-															iOS and android app. We will do backend and web
-															app. We have a version one mockup of the UI,
-															please see it attached. As mentioned before, we
-															would simply hand you all the assets for the UI
-															and you guys code. If you have any early questions
-															please do send them on to myself. Ill be in touch
-															in coming days when we have.
-														</p>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix upload-file">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img1.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<div class="upload-file-box clearfix">
-															<div class="left">
-																<img
-																	src="vendors/images/upload-file-img.jpg"
-																	alt=""
-																/>
-																<div class="overlay">
-																	<a href="#">
-																		<span
-																			><i class="fa fa-angle-down"></i
-																		></span>
-																	</a>
-																</div>
-															</div>
-															<div class="right">
-																<h3>Big room.jpg</h3>
-																<a href="#">Download</a>
-															</div>
-														</div>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-												<li class="clearfix upload-file admin_chat">
-													<span class="chat-img">
-														<img src="vendors/images/chat-img2.jpg" alt="" />
-													</span>
-													<div class="chat-body clearfix">
-														<div class="upload-file-box clearfix">
-															<div class="left">
-																<img
-																	src="vendors/images/upload-file-img.jpg"
-																	alt=""
-																/>
-																<div class="overlay">
-																	<a href="#">
-																		<span
-																			><i class="fa fa-angle-down"></i
-																		></span>
-																	</a>
-																</div>
-															</div>
-															<div class="right">
-																<h3>Big room.jpg</h3>
-																<a href="#">Download</a>
-															</div>
-														</div>
-														<div class="chat_time">09:40PM</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<div class="chat-footer">
-											<div class="file-upload">
-												<a href="#"><i class="fa fa-paperclip"></i></a>
-											</div>
-											<div class="chat_text_area">
-												<textarea placeholder="Type your message…"></textarea>
-											</div>
-											<div class="chat_send">
-												<button class="btn btn-link" type="submit">
-													<i class="icon-copy ion-paper-airplane"></i>
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="footer-wrap pd-20 mb-20 card-box">
-					DeskApp - Bootstrap 4 Admin Template By
-					<a href="https://github.com/dropways" target="_blank"
-						>Ankit Hingarajiya</a
-					>
-				</div>
-			</div>
-		</div>
+		
 		<!-- welcome modal start -->
-		<div class="welcome-modal">
-			<button class="welcome-modal-close">
-				<i class="bi bi-x-lg"></i>
-			</button>
-			<iframe
-				class="w-100 border-0"
-				src="https://embed.lottiefiles.com/animation/31548"
-			></iframe>
-			<div class="text-center">
-				<h3 class="h5 weight-500 text-center mb-2">
-					Open source
-					<span role="img" aria-label="gratitude">❤️</span>
-				</h3>
-				<div class="pb-2">
-					<a
-						class="github-button"
-						href="https://github.com/dropways/deskapp"
-						data-color-scheme="no-preference: dark; light: light; dark: light;"
-						data-icon="octicon-star"
-						data-size="large"
-						data-show-count="true"
-						aria-label="Star dropways/deskapp dashboard on GitHub"
-						>Star</a
-					>
-					<a
-						class="github-button"
-						href="https://github.com/dropways/deskapp/fork"
-						data-color-scheme="no-preference: dark; light: light; dark: light;"
-						data-icon="octicon-repo-forked"
-						data-size="large"
-						data-show-count="true"
-						aria-label="Fork dropways/deskapp dashboard on GitHub"
-						>Fork</a
-					>
-				</div>
-			</div>
-			<div class="text-center mb-1">
-				<div>
-					<a
-						href="https://github.com/dropways/deskapp"
-						target="_blank"
-						class="btn btn-light btn-block btn-sm"
-					>
-						<span class="text-danger weight-600">STAR US</span>
-						<span class="weight-600">ON GITHUB</span>
-						<i class="fa fa-github"></i>
-					</a>
-				</div>
-				<script
-					async
-					defer="defer"
-					src="https://buttons.github.io/buttons.js"
-				></script>
-			</div>
-			<a
-				href="https://github.com/dropways/deskapp"
-				target="_blank"
-				class="btn btn-success btn-sm mb-0 mb-md-3 w-100"
-			>
-				DOWNLOAD
-				<i class="fa fa-download"></i>
-			</a>
-			<p class="font-14 text-center mb-1 d-none d-md-block">
-				Available in the following technologies:
-			</p>
-			<div class="d-none d-md-flex justify-content-center h1 mb-0 text-danger">
-				<i class="fa fa-html5"></i>
-			</div>
-		</div>
-		<button class="welcome-modal-btn">
-			<i class="fa fa-download"></i> Download
-		</button>
+		
+		
 		<!-- welcome modal end -->
 		<!-- js -->
 		<script src="vendors/scripts/core.js"></script>
 		<script src="vendors/scripts/script.min.js"></script>
 		<script src="vendors/scripts/process.js"></script>
 		<script src="vendors/scripts/layout-settings.js"></script>
+		<script src="src/plugins/apexcharts/apexcharts.min.js"></script>
+		<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+		<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+		<script src="vendors/scripts/dashboard.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
