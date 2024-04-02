@@ -17,6 +17,8 @@
 			sizes="32x32"
 			href="vendors/images/favicon-32x32.png"
 		/>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+       <script src="https://cdn.tailwindcss.com"></script>
 		<link
 			rel="icon"
 			type="image/png"
@@ -557,6 +559,136 @@
 		</div>
 		
 		<div class="mobile-menu-overlay"></div>
+     <div class="main-container">
+        <header>
+            <div class="navbar bg-base-100 lg:px-10 shadow-xl">
+              <div class="navbar-start">
+               
+                <a class="btn btn-ghost normal-case text-xl">Shopping Cart</a>
+              </div>
+              
+              <div class="navbar-end">
+                <a class="btn">Get started</a>
+              </div>
+            </div>
+          </header>
+          <!-- --main--- -->
+          <main class="w-[90%] mx-auto mt-10 px-2">
+            <div class=" flex flex-col md:flex-row lg:flex-row">
+              <div class="w-full md:w-[55%] lg:w-[55%] grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                  <figure><img class="w-fit" src="https://www.motortrend.com/uploads/2023/10/2024-Toyota-RAV4-TRD-front-view-20.jpg" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title" id="product-name">Subaru</h2>
+                    <p>Uk Used</p>
+                    <p>Price:$ <span id="price">100</span></p>
+                    <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="80"/>
+                    <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+                    <div class="card-actions justify-end">
+                      <button id="fristCard-butt" class="btn btn-primary">Add To Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2nd -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                  <figure><img src="https://www.motortrend.com/uploads/2023/10/2024-Toyota-RAV4-TRD-front-view-20.jpg" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Benz</h2>
+                    <p> New</p>
+                    <p>Price:$ <span>100</span></p>
+                    <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="180$"/>
+                    <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+                    <div  class="card-actions justify-end">
+                      <button id="secound-card-butt" class="btn btn-primary">Add To Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3rd -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                  <figure><img src=" https://global.toyota/pages/news/images/2021/08/02/1330/001.jpg" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Premio</h2>
+                    <p>Ug Used</p>
+                    <p>Price:$ <span>100</span></p>
+                    <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="120$"/>
+                    <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+                    <div class="card-actions justify-end">
+                      <button id="third-card-butt" class="btn btn-primary">Add To Card</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src=" https://global.toyota/pages/news/images/2021/08/02/1330/001.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Honda</h2>
+                      <p>Ug Used</p>
+                      <p>Price:$ <span>100</span></p>
+                      <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="80$"/>
+                      <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+                      <div class="card-actions justify-end">
+                        <button id="third-card-butt" class="btn btn-primary">Add To Card</button>
+                      </div>
+                    </div>
+                  </div>
+
+                <!-- 4th -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                  <figure><img src="https://www.motortrend.com/uploads/2023/10/2024-Toyota-RAV4-TRD-front-view-20.jpg" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">KIA</h2>
+                    <p>China Used</p>
+                    <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="200$"/>
+                    <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+                    <div class="card-actions justify-end">
+                      <button id="fourth-card-butt" class="btn btn-primary">Add To Card</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 5th -->
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                  <figure><img src="https://global.toyota/pages/news/images/2021/08/02/1330/001.jpg" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <h2 class="card-title">Toyota</h2>
+                    <p>UK USED</p>
+                   
+                    <input id="price" type="text" placeholder="Price:$" class="input input-bordered input-info w-full max-w-xs" value="300$"/>
+                    <input id="quantity" type="text" placeholder="Quantity:" class="input input-bordered input-info w-full max-w-xs" />
+                    <div class="card-actions justify-end">
+                      <button id="fifth-card-butt" class="btn btn-primary">Add To Card</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-[45%] lg:w-[50%] bg-gray-200 mx-auto pt-42">
+                <h2 class="text-center underline pt-42">Account List <span>00</span></h2>
+                <div class="tab">
+                  <div class="overflow-x-auto">
+                    <table class="table w-full ">
+                      <!-- head -->
+                      <thead >
+                        <tr class="underline">
+                          <th >No</th>
+                          <th>Name</th>
+                          <th>Price</th>
+                          <th>Qun:</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table-conainer" class="text-black ">
+                        
+                      </tbody>
+                    </table>
+                    <div class="mt-2 bg-blue-300  ml-[40%] p-1 border-2 border-green-600 rounded-lg">TOTAL AMOUNT = $<span class="text-indigo-900 font-semibold" id="total">00</span></div>
+                    <div class="mt-2 bg-gray-300  ml-[40%] p-1 border-2 border-green-600 rounded-lg">
+                       <button>Cancel</button>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        
+     </div>
 
 		
 		<!-- welcome modal start -->
@@ -564,6 +696,8 @@
 		
 		<!-- welcome modal end -->
 		<!-- js -->
+        <script src="js/uitility.js"></script>
+        <script src="js/allbutton.js"></script>
 		<script src="vendors/scripts/core.js"></script>
 		<script src="vendors/scripts/script.min.js"></script>
 		<script src="vendors/scripts/process.js"></script>
